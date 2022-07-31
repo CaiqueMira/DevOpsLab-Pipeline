@@ -11,3 +11,5 @@ deploy:
     secure: $HEROKU_KEY
   app: devops-ultimate
   edge: true
+  on:
+    branch: main
