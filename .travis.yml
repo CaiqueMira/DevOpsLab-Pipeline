@@ -27,7 +27,7 @@ before_install:
     esac
 
 before_cache:
-- gem install json -v '2.6.2' --source 'https://rubygems.org/'
+- bundle update && bundle install
 - |-
     case $TRAVIS_OS_NAME in
       windows)
