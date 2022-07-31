@@ -7,6 +7,7 @@ script:
   - npm test
 
 before_install:
+  - gem install json -v '2.6.2' --source 'https://rubygems.org/'
 - |-
     case $TRAVIS_OS_NAME in
       windows)
@@ -39,7 +40,7 @@ cache:
     directories:
     - $HOME/AppData/Local/Temp/chocolatey
     - /C/tools/msys64
-      
+
 deploy:
   provider: heroku
   api_key:
