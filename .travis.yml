@@ -25,9 +25,9 @@ before_install:
         export MAKE=mingw32-make  # so that Autotools can find it
         ;;
     esac
-- gem install json -v '2.6.2' --source 'https://rubygems.org/'
 
 before_cache:
+- gem install json -v '2.6.2' --source 'https://rubygems.org/'
 - |-
     case $TRAVIS_OS_NAME in
       windows)
