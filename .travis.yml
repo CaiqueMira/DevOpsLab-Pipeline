@@ -9,5 +9,7 @@ deploy:
   api_key:
     secure: $HEROKU_KEY
   app: devops-ultimate
-  edge: true  
+  edge: true
+  on:
+    branch: main    
 
